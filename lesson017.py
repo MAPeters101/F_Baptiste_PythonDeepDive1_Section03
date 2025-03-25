@@ -28,4 +28,9 @@ print(hex(id(b)))
 print(ref_count(id(a)))
 print('-'*80)
 
+a_id = id(a)
+a = None
+print(ref_count(a_id))
+
+
 
