@@ -12,4 +12,20 @@ print(ref_count(id(a)))
 print(ctypes.c_long.from_address(id(a)).value)
 print('-'*80)
 
+b = a
+print(hex(id(a)))
+print(hex(id(b)))
+print(ref_count(id(a)))
+
+c = a
+print(ref_count(id(a)))
+
+c = 10
+print(ref_count(id(a)))
+
+b = None
+print(hex(id(b)))
+print(ref_count(id(a)))
+print('-'*80)
+
 
