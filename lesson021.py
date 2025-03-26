@@ -6,4 +6,12 @@ print(my_list)
 print(hex(id(my_list)))
 print('-'*80)
 
+my_list_1 = [1,2,3]
+print(hex(id(my_list_1)))
+
+my_list_1 = my_list_1 + [4]
+print(hex(id(my_list_1)))
+
+
+
 
