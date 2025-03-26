@@ -6,5 +6,9 @@ print(b)
 print(type(b))
 print('-'*80)
 
+help(int)
+print('-'*80)
+
+
 
 
