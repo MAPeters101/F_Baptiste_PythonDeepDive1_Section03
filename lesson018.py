@@ -26,3 +26,18 @@ print(hex(id(my_var)))
 print(hex(id(my_var.b)))
 print(hex(id(my_var.b.a)))
 print('-'*80)
+
+a_id = id(my_var)
+b_id = id(my_var.b)
+print(hex(a_id))
+print(hex(b_id))
+print('-'*80)
+
+
+
+
+
+
+
+
+
