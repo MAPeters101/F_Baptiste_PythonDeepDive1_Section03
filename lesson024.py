@@ -38,3 +38,25 @@ print("a is b:", a is b)
 print("a == b:", a == b)
 print('-'*80)
 
+print(hex(id(None)))
+a = None
+b = None
+c = None
+print(hex(id(a)))
+print(hex(id(b)))
+print(hex(id(c)))
+print("a is b:", a is b)
+print("a is c:", a is c)
+print("a is None:", a is None)
+print("b is None:", b is None)
+print("c is None:", c is None)
+print("a == b:", a == b)
+print("a == c:", a == c)
+print('-'*80)
+
+
+
+
+
+
+
