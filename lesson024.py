@@ -20,5 +20,21 @@ print(hex(id(a)))
 print(hex(id(b)))
 print("a is b:", a is b)
 print("a == b:", a == b)
+print('='*80)
+
+a = 10
+b = 10.0
+print(hex(id(a)))
+print(hex(id(b)))
+print("a is b:", a is b)
+print("a == b:", a == b)
+print('-'*80)
+
+a = 10 + 0j
+b = 10.0
+print(hex(id(a)))
+print(hex(id(b)))
+print("a is b:", a is b)
+print("a == b:", a == b)
 print('-'*80)
 
