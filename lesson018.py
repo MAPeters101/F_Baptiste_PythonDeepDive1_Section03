@@ -10,4 +10,16 @@ def object_by_id(object_id):
             return "Object exists"
         return "Not Found"
 
+class A:
+    def __init__(self):
+        self.b = B(self)
+        print('A: self: {0}, b: {1}'.format(hex(id(self)), hex(id(self.b))))
+
+class B:
+    def __init__(self, a):
+        self.a = a
+        print('B: self: {0}, a: {1}'.format(hex(id(self)), hex(id(self.a))))
+
+
+
 
