@@ -30,7 +30,16 @@ print(t[2])
 print(hex(id(t[2])))
 print('-'*80)
 
-
+t = ([1,2], [3,4])
+print(hex(id(t)))
+print(t[0])
+print(hex(id(t[0])))
+print()
+t[0].append(3)
+print(t)
+print(hex(id(t)))
+print(t[0])
+print(hex(id(t[0])))
 
 
 
