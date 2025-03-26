@@ -20,5 +20,17 @@ my_dict['key3'] = 10.5
 print(hex(id(my_dict)))
 print('-'*80)
 
+t = (1, 2, 3)
+print(hex(id(t)))
+print(t[0])
+print(hex(id(t[0])))
+print(t[1])
+print(hex(id(t[1])))
+print(t[2])
+print(hex(id(t[2])))
+print('-'*80)
+
+
+
 
 
