@@ -33,6 +33,12 @@ print(hex(a_id))
 print(hex(b_id))
 print('-'*80)
 
+print(ref_count(a_id))
+print(ref_count(b_id))
+print(object_by_id(a_id))
+print(object_by_id(b_id))
+print('-'*80)
+
 
 
 
