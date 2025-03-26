@@ -29,6 +29,21 @@ print(b)
 print()
 print('-'*80)
 
+a = 10
+b = 10
+print(hex(id(a)))
+print(hex(id(b)))
+
+a = 1000
+b = 1000
+print(hex(id(a)))
+print(hex(id(b)))
+
+a = 100_000_000_000
+b = 100_000_000_000
+print(hex(id(a)))
+print(hex(id(b)))
+
 
 
 
