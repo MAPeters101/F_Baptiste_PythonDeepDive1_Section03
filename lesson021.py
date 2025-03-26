@@ -11,7 +11,14 @@ print(hex(id(my_list_1)))
 
 my_list_1 = my_list_1 + [4]
 print(hex(id(my_list_1)))
+print('-'*80)
 
+my_dict = dict(key1=1, key2='a')
+print(my_dict)
+print(hex(id(my_dict)))
+my_dict['key3'] = 10.5
+print(hex(id(my_dict)))
+print('-'*80)
 
 
 
