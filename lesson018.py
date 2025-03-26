@@ -46,6 +46,21 @@ print(ref_count(a_id))
 print(ref_count(b_id))
 print(object_by_id(a_id))
 print(object_by_id(b_id))
+print('-'*80)
+
+gc.collect()
+print(object_by_id(a_id))
+print(object_by_id(b_id))
+print(ref_count(a_id))
+print(ref_count(b_id))
+from time import sleep
+sleep(2)
+print(ref_count(a_id))
+print(ref_count(b_id))
+sleep(2)
+print(ref_count(a_id))
+print(ref_count(b_id))
+print('-'*80)
 
 
 
