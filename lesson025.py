@@ -9,6 +9,12 @@ print('-'*80)
 help(int)
 print('-'*80)
 
+c = int()
+print(c)
+
+c = int('101', base=2)
+print(c)
+print('-'*80)
 
 
 
