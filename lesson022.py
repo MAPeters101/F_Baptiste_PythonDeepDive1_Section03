@@ -23,6 +23,16 @@ print('After function call: my_list # = {0}'.format(hex(id(my_list))))
 print(my_list)
 print('-'*80)
 
+def modify_tuple(t):
+    print('Initial t # = {0}'.format(hex(id(t))))
+    t[0].append(100)
+    print('Final lst # = {0}'.format(hex(id(t))))
+
+my_tuple = ([1,2], 'a')
+print('my_tuple # = {0}'.format(hex(id(my_tuple))))
+modify_tuple(my_tuple)
+print('After function call: my_tuple # = {0}'.format(hex(id(my_tuple))))
+print(my_tuple)
 
 
 
