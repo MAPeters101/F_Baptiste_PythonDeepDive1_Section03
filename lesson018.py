@@ -5,10 +5,12 @@ def ref_count(address):
     return ctypes.c_long.from_address(address).value
 
 def object_by_id(object_id):
+    #print(gc.get_objects())
     for obj in gc.get_objects():
+        #print(obj, hex(id(obj)), hex(object_id))
         if id(obj) == object_id:
             return "Object exists"
-        return "Not Found"
+    return "Not Found"
 
 class A:
     def __init__(self):
@@ -39,7 +41,11 @@ print(object_by_id(a_id))
 print(object_by_id(b_id))
 print('-'*80)
 
-
+my_var = None
+print(ref_count(a_id))
+print(ref_count(b_id))
+print(object_by_id(a_id))
+print(object_by_id(b_id))
 
 
 
