@@ -20,6 +20,9 @@ class B:
         self.a = a
         print('B: self: {0}, a: {1}'.format(hex(id(self)), hex(id(self.a))))
 
-
-
-
+gc.disable()
+my_var = A()
+print(hex(id(my_var)))
+print(hex(id(my_var.b)))
+print(hex(id(my_var.b.a)))
+print('-'*80)
