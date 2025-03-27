@@ -6,3 +6,4 @@ def my_func():
     e = 'the quick brown fox' * 5
     f = ['a', 'b'] * 3
 
+print(my_func.__code__.co_consts)
