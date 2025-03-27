@@ -46,4 +46,14 @@ membership_test(10_000_000, char_list)
 end = time.perf_counter()
 print('list: ', end-start)
 
+start = time.perf_counter()
+membership_test(10_000_000, char_tuple)
+end = time.perf_counter()
+print('tuple: ', end-start)
+
+start = time.perf_counter()
+membership_test(10_000_000, char_set)
+end = time.perf_counter()
+print('set: ', end-start)
+
 
