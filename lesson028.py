@@ -34,6 +34,16 @@ char_set = set(string.ascii_letters)
 print(char_list)
 print(char_tuple)
 print(char_set)
+print('-'*80)
 
+def membership_test(n, container):
+    for i in range(n):
+        if 'z' in container:
+            pass
+
+start = time.perf_counter()
+membership_test(10_000_000, char_list)
+end = time.perf_counter()
+print('list: ', end-start)
 
 
