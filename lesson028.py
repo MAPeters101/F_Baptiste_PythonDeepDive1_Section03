@@ -23,7 +23,17 @@ def my_func(e):
 print(my_func.__code__.co_consts)
 print('-'*80)
 
+import string
+import time
 
+print(string.ascii_letters)
+char_list = list(string.ascii_letters)
+char_tuple = tuple(string.ascii_letters)
+char_set = set(string.ascii_letters)
+
+print(char_list)
+print(char_tuple)
+print(char_set)
 
 
 
