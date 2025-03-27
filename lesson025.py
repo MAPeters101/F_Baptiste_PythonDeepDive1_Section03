@@ -31,7 +31,7 @@ print(f(2))
 print('-'*80)
 
 def cube(a):
-    return a ** c
+    return a ** 3
 
 def select_function(fn_id):
     if fn_id == 1:
@@ -47,7 +47,12 @@ print()
 f = select_function(2)
 print(f is cube)
 print(f(2))
-print()
+print('-'*80)
+
+print(select_function(2)(3))
+print('-'*80)
+
+
 
 
 
