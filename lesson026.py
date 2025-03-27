@@ -26,6 +26,16 @@ print(hex(id(b)))
 print(a is b)
 print('-'*80)
 
-
-
+a = 10
+b = int(10)
+c = int('10')
+d = int('1010', 2)
+print(a)
+print(b)
+print(c)
+print(d)
+print(hex(int(a)))
+print(hex(int(b)))
+print(hex(int(c)))
+print(hex(int(d)))
 
