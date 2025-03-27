@@ -25,9 +25,18 @@ print(hex(id(a)))
 print(hex(id(b)))
 print(a is b)
 print()
-
-
 print('-'*80)
 
-
+import sys
+a = sys.intern('hello world')
+b = sys.intern('hello world')
+c = 'hello world'
+print(hex(id(a)))
+print(hex(id(b)))
+print(hex(id(c)))
+print(a is b)
+print(a == b)
+print(a is c)
+print(a == c)
+print('-'*80)
 
