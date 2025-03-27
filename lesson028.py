@@ -7,3 +7,16 @@ def my_func():
     f = ['a', 'b'] * 3
 
 print(my_func.__code__.co_consts)
+print('-'*80)
+
+def my_func(e):
+    if e in [1,2,3]:
+        pass
+
+print(my_func.__code__.co_consts)
+print('-'*80)
+
+
+
+
+
