@@ -52,7 +52,11 @@ print('-'*80)
 print(select_function(2)(3))
 print('-'*80)
 
+def exec_function(fn, n):
+    return fn(n)
 
+print(exec_function(cube, 3))
+print(exec_function(square, 3))
 
 
 
